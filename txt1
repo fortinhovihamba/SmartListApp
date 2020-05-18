@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">SMARTLIST APP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"> ACCUEIL <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#Prgrm" href="#">PROGRAMME ACAD <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#Res" href="#">RÉSULTAT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PARAMÈTRE</a>
+      </li>
+
+
+    </ul>
+    <div class="my-2 my-lg-0">
+
+    <a href="#">  <button class="btn btn-outline-danger my-2 my-sm-0">SE DÉCONNECTER</button></a>
+  </div>
+  </div>
+</nav>
+<div class="modal fade" id="Res" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <?php include ('../formModal/_formRes.php');?>
+</div>
+<div class="modal fade" id="Prgrm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <?php include ('../formModal/_formPrgrm.php');?>
+</div>
